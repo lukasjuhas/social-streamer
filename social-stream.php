@@ -52,9 +52,16 @@ function socstrm_init() {
 	$includes = array(
 			'functions.php'
 	);
+	$classes = array(
+			'socstrm_class.php'
+	);
 
 	foreach($includes as $file) {
 		require( dirname( __FILE__ ) . '/inc/' . $file);
+	}
+
+	foreach($classes as $class) {
+		require( dirname( __FILE__ ) . '/class/' . $class);
 	}
 }
 add_action( 'init', 'socstrm_init', 1);
