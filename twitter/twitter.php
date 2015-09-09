@@ -3,7 +3,7 @@
 * Useful function for twitter using codebird-php
 * https://dev.twitter.com/rest/public
 */
-class twitter {
+class WPSS_Twitter {
 
     //These are your keys/tokens/secrets provided by Twitter
     const CONSUMER_KEY = 'ENTERHERE';
@@ -20,7 +20,8 @@ class twitter {
     */
     static private function cb_auth() {
         //codebird is going to be doing the oauth lifting for us
-        require_once( WPSS_PLUGIN_DIR . 'twitter/vendor/codebird.php' );
+        if(!class_exists('Codebird'))
+            require_once( WPSS_PLUGIN_DIR . 'twitter/vendor/codebird.php' );
 
         //Get authenticated
         \Codebird\Codebird::setConsumerKey(self::CONSUMER_KEY, self::CONSUMER_SECRET);
