@@ -6,7 +6,7 @@
  * Plugin Name: Social Stream
  * Plugin URI: https://github.com/lukasjuhas/wp-social-stream/
  * Description: This plugin allows you to get all your social stream in to one timeline.
- * Version: 0.0.1
+ * Version: 0.1
  * Author: Lukas Juhas
  * Author URI: http://lukasjuhas.com/
  * License: GPL2
@@ -15,7 +15,7 @@
 /*  Copyright 2014  Lukas Juhas  (email : hello@lukasjuhas.com)
 
     This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as 
+    it under the terms of the GNU General Public License, version 2, as
     published by the Free Software Foundation.
 
     This program is distributed in the hope that it will be useful,
@@ -35,8 +35,8 @@ if ( !function_exists( 'add_action' ) ) {
 }
 
 // Define some useful stuff
-define( 'SOCSTRM_VERSION', '0.0.1' );
-define( 'SOCSTRM__MINIMUM_WP_VERSION', '3.9.2' );
+define( 'SOCSTRM_VERSION', '0.1' );
+define( 'SOCSTRM__MINIMUM_WP_VERSION', '3.9.0' );
 define( 'SOCSTRM__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'SOCSTRM__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SOCSTRM_DELETE_LIMIT', 100000 );
@@ -44,7 +44,7 @@ define( 'SOCSTRM_DELETE_LIMIT', 100000 );
 /**
  * Init Plugin function
  * @author Lukas Juhas
- * @version 0.0.1
+ * @version 0.1
  * @package Social Stream
  * @since   2014-10-27
  */
@@ -70,7 +70,7 @@ add_action( 'init', 'socstrm_init', 1);
 /**
  * Activation of plugin
  * @author Lukas Juhas
- * @version 0.0.1
+ * @version 0.1
  * @package Social Stream
  * @since   2014-10-27
  */
@@ -83,4 +83,3 @@ register_activation_hook( __FILE__, 'socstrm_activate' );
 if ( is_admin() ) {
 	//require_once( SOCSTRM__PLUGIN_DIR . '/class/admin.php' );
 }
-

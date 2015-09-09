@@ -1,1 +1,2 @@
 <?php
+//general admin class
