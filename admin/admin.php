@@ -12,19 +12,19 @@ class WP_Social_Stream_Admin {
     }
 
     public function ui() {
-
+        add_menu_page( __('Social Stream', WPSS_PLUGIN_NAME), __('Social Stream', WPSS_PLUGIN_NAME), 'manage_options', 'wp-social-stream', array($this, 'settings-page'), 'dashicons-share', 100 );
     }
 
     public function enqueue_styles() {
         #settins page styles
-        wp_enqueue_style( LJAMM_PLUGIN_NAME );
+        wp_enqueue_style( WPSS_PLUGIN_NAME );
     }
 
     public function scripts() {
         #dependencies
         $deps = array();
         #register plugin styles
-        wp_register_style( LJAMM_PLUGIN_NAME, LJAMM__PLUGIN_URL . 'styles/settings.css', $deps, LJAMM_VERSION );
+        wp_register_style( WPSS_PLUGIN_NAME, WPSS_PLUGIN_URL . 'styles/settings.css', $deps, WPSS_VERSION );
     }
 
     public function settings() {
@@ -33,7 +33,7 @@ class WP_Social_Stream_Admin {
 
     public function settings_page() {
         ob_start();
-        include LJAMM__PLUGIN_DIR . 'admin/pages/settings.php';
+        include WPSS_PLUGIN_DIR . 'admin/pages/settings.php';
         $settings = ob_get_contents();
         ob_end_clean();
         echo $settings;
