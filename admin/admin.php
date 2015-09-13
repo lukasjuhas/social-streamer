@@ -2,7 +2,7 @@
 /**
 * Main Admin Class
 */
-class WP_Social_Stream_Admin {
+class Social_Streamer_Admin {
 
     function __construct() {
         #hooks
@@ -12,7 +12,7 @@ class WP_Social_Stream_Admin {
     }
 
     public function ui() {
-        add_menu_page( __('Social Stream', WPSS_PLUGIN_NAME), __('Social Stream', WPSS_PLUGIN_NAME), 'manage_options', 'wp-social-stream', array($this, 'settings-page'), 'dashicons-share', 100 );
+        add_menu_page( __('Social Stream', WPSS_PLUGIN_NAME), __('Social Stream', WPSS_PLUGIN_NAME), 'manage_options', 'wp-social-stream', array($this, 'settings_page'), 'dashicons-share', 100 );
     }
 
     public function enqueue_styles() {
@@ -42,4 +42,4 @@ class WP_Social_Stream_Admin {
 }
 
 # init
-$WP_Social_Stream_Admin = new WP_Social_Stream_Admin();
+$Social_Streamer_Admin = new Social_Streamer_Admin();

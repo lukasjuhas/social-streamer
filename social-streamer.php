@@ -38,7 +38,7 @@ define( 'WPSS_PLUGIN_NAME', substr(WPSS_PLUGIN_BASENAME, 0, strrpos( WPSS_PLUGIN
 define( 'WPSS_CONTACT_EMAIL', 'hello@lukasjuhas.com' );
 
 # hooks
-add_action( 'activate_' . LJAMM__PLUGIN_BASENAME, 'wpss_install' );
+add_action( 'activate_' . WPSS_PLUGIN_BASENAME, 'wpss_install' );
 add_action( 'init', 'wpss_init' );
 
 # on installation
