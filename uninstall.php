@@ -4,8 +4,8 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) )
 		exit();
 
 # on uninstall, clean up database removing plugin options
-function wpss_delete_plugin() {
+function ss__delete_plugin() {
 		// delete_option( 'wpss-content' );
 }
 
-wpss_delete_plugin();
+ss__delete_plugin();

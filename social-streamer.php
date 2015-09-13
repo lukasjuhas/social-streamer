@@ -29,24 +29,24 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 # define stuff
-define( 'WPSS_VERSION', '0.1' );
-define( 'WPSS_MINIMUM_WP_VERSION', '3.9.0' );
-define( 'WPSS_PLUGIN_BASENAME', plugin_basename( __FILE__ ));
-define( 'WPSS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'WPSS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'WPSS_PLUGIN_NAME', substr(WPSS_PLUGIN_BASENAME, 0, strrpos( WPSS_PLUGIN_BASENAME, '/')) );
-define( 'WPSS_CONTACT_EMAIL', 'hello@lukasjuhas.com' );
+define( 'SS__VERSION', '0.1' );
+define( 'SS__MINIMUM_WP_VERSION', '3.8.0' );
+define( 'SS__PLUGIN_BASENAME', plugin_basename( __FILE__ ));
+define( 'SS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'SS__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'SS__PLUGIN_NAME', substr(SS__PLUGIN_BASENAME, 0, strrpos( SS__PLUGIN_BASENAME, '/')) );
+define( 'SS__CONTACT_EMAIL', 'hello@lukasjuhas.com' );
 
 # hooks
-add_action( 'activate_' . WPSS_PLUGIN_BASENAME, 'wpss_install' );
-add_action( 'init', 'wpss_init' );
+add_action( 'activate_' . SS__PLUGIN_BASENAME, 'ss__install' );
+add_action( 'init', 'ss__init' );
 
 # on installation
-function wpss_install() {
+function ss__install() {
 
 }
 
 # init
-function wpss_init() {
-    require_once( WPSS_PLUGIN_DIR . 'init.php' );
+function ss__init() {
+    require_once( SS__PLUGIN_DIR . 'init.php' );
 }
