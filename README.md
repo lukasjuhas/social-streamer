@@ -1,4 +1,4 @@
-# Social Stream (wp-social-stream) 0.1
+# Social Streamer BETA
 Get all your social feeds. WorpPress plugin
 
 ## TBC

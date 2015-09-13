@@ -1,9 +1,9 @@
 <?php
 /**
-* Plugin Name: Social Stream
-* Plugin URI: https://github.com/lukasjuhas/wp-social-stream/
+* Plugin Name: Social Streamer
+* Plugin URI: https://github.com/lukasjuhas/social-streamer/
 * Description: This plugin allows you to get all your social stream in to one timeline.
-* Version: 0.1
+* Version: 0.1.0
 * Author: Lukas Juhas
 * Author URI: http://lukasjuhas.com/
 * License: GPL2
@@ -48,5 +48,5 @@ function wpss_install() {
 
 # init
 function wpss_init() {
-    require_once( LJAMM__PLUGIN_DIR . 'init.php' );
+    require_once( WPSS_PLUGIN_DIR . 'init.php' );
 }
