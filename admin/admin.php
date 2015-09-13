@@ -33,6 +33,11 @@ class Social_Streamer_Admin {
         register_setting( 'wpss', 'ss__twitter_consumer_secret' );
         register_setting( 'wpss', 'ss__twitter_access_token' );
         register_setting( 'wpss', 'ss__twitter_access_token_secret' );
+
+        //Instagram
+        register_setting( 'wpss', 'ss__instagram_api_key' );
+        register_setting( 'wpss', 'ss__instagram_api_secret' );
+        register_setting( 'wpss', 'ss__instagram_api_callback' );
     }
 
     public function settings_page() {

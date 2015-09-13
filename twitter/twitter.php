@@ -5,10 +5,10 @@
 */
 class SS__Twitter {
 
-    const CONSUMER_KEY = 'ENTERHERE';
-    const CONSUMER_SECRET = 'ENTERHERE';
-    const ACCESS_TOKEN = 'ENTERHERE';
-    const ACCESS_TOKEN_SECRET = 'ENTERHERE';
+    const CONSUMER_KEY = SS_TWITTER_CONSUMER_KEY;
+    const CONSUMER_SECRET = SS_TWITTER_CONSUMER_SECRET;
+    const ACCESS_TOKEN = SS_TWITTER_ACCESS_TOKEN;
+    const ACCESS_TOKEN_SECRET = SS_TWITTER_ACCESS_TOKEN_SECRET;
 
     /**
     * Authentication using codebird-php

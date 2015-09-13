@@ -9,19 +9,35 @@
         <table class="form-table">
             <tr valign="top">
                 <th scope="row"><?php _e('Consumer Key (API Key)', SS__PLUGIN_NAME ); ?></th>
-                <td><input type="text" name="ss__twitter_consumer_key" value="<?php echo esc_attr( get_option('ss__twitter_consumer_key') ) ?>"></td>
+                <td><input type="text" class="regular-text" name="ss__twitter_consumer_key" value="<?php echo esc_attr( get_option('ss__twitter_consumer_key') ) ?>"></td>
             </tr>
             <tr valign="top">
                 <th scope="row"><?php _e('Consumer Secret (API Secret)', SS__PLUGIN_NAME ); ?></th>
-                <td><input type="text" name="ss__twitter_consumer_secret" value="<?php echo esc_attr( get_option('ss__twitter_consumer_secret') ) ?>"></td>
+                <td><input type="text" class="regular-text" name="ss__twitter_consumer_secret" value="<?php echo esc_attr( get_option('ss__twitter_consumer_secret') ) ?>"></td>
             </tr>
             <tr valign="top">
                 <th scope="row"><?php _e('Access Token', SS__PLUGIN_NAME ); ?></th>
-                <td><input type="text" name="ss__twitter_access_token" value="<?php echo esc_attr( get_option('ss__twitter_access_token') ) ?>"></td>
+                <td><input type="text" class="regular-text" name="ss__twitter_access_token" value="<?php echo esc_attr( get_option('ss__twitter_access_token') ) ?>"></td>
             </tr>
             <tr valign="top">
                 <th scope="row"><?php _e('Access Token Secret', SS__PLUGIN_NAME ); ?></th>
-                <td><input type="text" name="ss__twitter_access_token_secret" value="<?php echo esc_attr( get_option('ss__twitter_access_token_secret') ) ?>"></td>
+                <td><input type="text" class="regular-text" name="ss__twitter_access_token_secret" value="<?php echo esc_attr( get_option('ss__twitter_access_token_secret') ) ?>"></td>
+            </tr>
+        </table>
+
+        <h3><?php _e('Instagram', SS__PLUGIN_NAME ); ?></h3>
+        <table class="form-table">
+            <tr valign="top">
+                <th scope="row"><?php _e('API Key', SS__PLUGIN_NAME ); ?></th>
+                <td><input type="text" class="regular-text" name="ss__instagram_api_key" value="<?php echo esc_attr( get_option('ss__instagram_api_key') ) ?>"></td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e('API Secret', SS__PLUGIN_NAME ); ?></th>
+                <td><input type="text" class="regular-text" name="ss__instagram_api_secret" value="<?php echo esc_attr( get_option('ss__instagram_api_secret') ) ?>"></td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e('API Callback', SS__PLUGIN_NAME ); ?></th>
+                <td><input type="text" class="regular-text" name="ss__instagram_api_callback" value="<?php echo esc_attr( get_option('ss__instagram_api_callback') ) ?>"></td>
             </tr>
         </table>
 

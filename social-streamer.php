@@ -37,6 +37,15 @@ define( 'SS__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SS__PLUGIN_NAME', substr(SS__PLUGIN_BASENAME, 0, strrpos( SS__PLUGIN_BASENAME, '/')) );
 define( 'SS__CONTACT_EMAIL', 'hello@lukasjuhas.com' );
 
+define( 'SS_TWITTER_CONSUMER_KEY', get_option('ss__twitter_consumer_key') );
+define( 'SS_TWITTER_CONSUMER_SECRET', get_option('ss__twitter_consumer_secret') );
+define( 'SS_TWITTER_ACCESS_TOKEN', get_option('ss__twitter_access_token') );
+define( 'SS_TWITTER_ACCESS_TOKEN_SECRET', get_option('ss__twitter_access_token_secret') );
+
+define( 'SS_INSTAGRAM_API_KEY', get_option('ss__instagram_api_key') );
+define( 'SS_INSTAGRAM_API_SECRET', get_option('ss__instagram_api_secret') );
+define( 'SS_INSTAGRAM_API_CALLBACK', get_option('ss__instagram_api_callback') );
+
 # hooks
 add_action( 'activate_' . SS__PLUGIN_BASENAME, 'ss__install' );
 add_action( 'init', 'ss__init' );
